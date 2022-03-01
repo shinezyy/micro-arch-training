@@ -40,3 +40,70 @@ How to make undergraduates or new graduates ready for advanced computer architec
 这类课程非常有深度，但是有时候和授课老师的研究方向强相关，比如Mutlu现在主要做Memory，所以这门课主要在讲Memory。
 我们发现[UWisc的CS752](https://pages.cs.wisc.edu/~sinclair/courses/cs752/fall2020/includes/schedule.html)在各个方面较为均衡，
 因此我们会以CS752为骨架，主要使用CS752的slides，同时推荐相关论文，然后我们会设计一些课程实验帮助大家熟悉研究工具。
+
+## Slides
+
+WIP...
+
+## Papers
+
+WIP...
+
+## Simulator - GEM5
+
+这里是上手用GEM5的入门训练
+
+### Build GEM5
+WIP...
+
+### Configure GEM5
+
+配置GEM5的Cache如下：
+`16 kB L1 I-Cache + 16 kB L1 D-Cache + 256kB L2 Cache + 2M L3 Cache; L2 and L3 Mostly-exclusive; Writeback clean`
+或许你不知道什么是Mostly-exclusive和Writeback clean，你需要主动去搜索学习、阅读代码。
+
+把[这里编译好的Coremark](#coremark)作为payload，运行GEM5，采集数据。
+
+### Modify GEM5
+
+#### Add new statistics
+
+#### Add new configurable parameter 
+
+#### Batch running
+
+#### Collecting statistics
+
+#### Collecting batch-running statistics
+
+WIP...
+
+## Simulator - NEMU
+
+### Take Checkpoints (Generic RISC-V Checkpoints)
+WIP...
+
+## Simulator - QEMU
+暂时鸽着
+
+## Verilator-Xiangshan
+暂时鸽着
+
+
+## Workloads
+
+这里是制作研究用的Workload的入门训练
+
+### Hello world
+
+编译一个RISC-V指令集的Native的hello world
+
+### Coremark
+
+### Checkpoints (Generic RISC-V Checkpoints)
+
+### SPECCPU 2006
+
+### Real applications!
+
+WIP...
