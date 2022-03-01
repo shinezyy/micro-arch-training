@@ -68,6 +68,11 @@ WIP...
 
 #### Add new statistics
 
+首先，需要学习GEM5的数据统计体系，了解 Stats::Scalar, Stats::Vec, Stats::Formula的用法，具体可以用grep读一读代码。
+然后增加一些性能计数器，
+- 用Stats::Vec统计每个周期发射的load指令的条数分布
+- 用Stats::Vec统计发射的Load指令和发射的Store指令的比例
+
 #### Add new configurable parameter 
 
 #### Batch running
