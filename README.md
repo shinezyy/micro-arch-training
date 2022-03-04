@@ -66,7 +66,9 @@ WIP...
 
 ### Modify GEM5
 
-#### Add new statistics
+#### GEM5 debug flags
+
+#### GEM5 statistics
 
 首先，需要学习GEM5的数据统计体系，了解 Stats::Scalar, Stats::Vec, Stats::Formula的用法，具体可以用grep读一读代码。
 然后增加一些性能计数器，
@@ -94,16 +96,32 @@ WIP...
 ## Verilator-Xiangshan
 暂时鸽着
 
-
 ## Workloads
 
 这里是制作研究用的Workload的入门训练
 
-### Hello world
-
-编译一个RISC-V指令集的Native的hello world
-
 ### Coremark
+
+编译一个RISC-V指令集的Coremark
+
+#### 编译基于newlib的Coremark
+使用[Boom提供Coremark编译脚本](https://github.com/riscv-boom/riscv-coremark.git)编译Coremark，你可能需要自己安装[RISC-V gnu toolchian](https://github.com/riscv-collab/riscv-gnu-toolchain)。
+
+并用GEM5运行：
+```./build/RISCV/gem5.opt ./configs/example/se.py -c /path/to/coremark.riscv```
+可能会发现Coremark没有输出，出了什么问题？
+学习者需要自己找到答案，记录猜测、验证猜测的过程，这个过程非常重要。
+可能用到的工具：
+- [GEM5 statistics](#gem5-statistics)
+- [GEM5 debug flags](#gem5-debug-flags)
+- QEMU / NEMU
+
+####
+使用[AM裸机环境](https://github.com/OpenXiangShan/nexus-am)编译裸机Coremark，参考
+[AM tutorial](https://github.com/OpenXiangShan/XiangShan-doc/blob/main/tutorial/others/%E4%BD%BF%E7%94%A8%20AM%20%E7%94%9F%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89%20workload.md)
+
+
+
 
 ### Checkpoints (Generic RISC-V Checkpoints)
 
