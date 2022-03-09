@@ -62,7 +62,7 @@ WIP...
 
 ### Configure GEM5
 
-Task:
+Tool Task:
 配置GEM5的Cache如下：
 `16 kB L1 I-Cache + 16 kB L1 D-Cache + 256kB L2 Cache + 2M L3 Cache; L2 and L3 Mostly-exclusive; Writeback clean`
 或许你不知道什么是Mostly-exclusive和Writeback clean，你需要主动去搜索学习、阅读代码。
@@ -84,8 +84,11 @@ Task:
 
 #### Event-driven programming
 
-Task:
+Tool task:
 在退出时Dump cache中所有的line的地址和内容，参考[Event-driven programming](https://www.gem5.org/documentation/learning_gem5/part2/events/)。
+
+Research training task:
+在退出时Dump cache中所有的line的地址和内容，按照`Least Important`的顺序导出。例如，当是`LRU`替换算法时，用`MRU`序导出。
 
 #### Batch running
 
@@ -116,7 +119,7 @@ WIP...
 
 #### 编译基于newlib的Coremark
 
-Task:
+Debug Training Task:
 
 使用[Boom提供Coremark编译脚本](https://github.com/riscv-boom/riscv-coremark.git)编译Coremark，你可能需要自己安装[RISC-V gnu toolchian](https://github.com/riscv-collab/riscv-gnu-toolchain)。
 
