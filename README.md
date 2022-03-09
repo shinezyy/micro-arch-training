@@ -47,7 +47,11 @@ WIP...
 
 ## Papers
 
-WIP...
+乱序执行入门论文
+
+[MIPS R10000](https://pages.cs.wisc.edu/~markhill/restricted/ieeemicro96_r10000.pdf)
+
+[SMT入门论文](https://pages.cs.wisc.edu/~markhill/restricted/isca96_smt.pdf)
 
 ## Simulator - GEM5
 
@@ -58,6 +62,7 @@ WIP...
 
 ### Configure GEM5
 
+Task:
 配置GEM5的Cache如下：
 `16 kB L1 I-Cache + 16 kB L1 D-Cache + 256kB L2 Cache + 2M L3 Cache; L2 and L3 Mostly-exclusive; Writeback clean`
 或许你不知道什么是Mostly-exclusive和Writeback clean，你需要主动去搜索学习、阅读代码。
@@ -76,6 +81,11 @@ WIP...
 - 用Stats::Vec统计发射的Load指令和发射的Store指令的比例
 
 #### Add new configurable parameter 
+
+#### Event-driven programming
+
+Task:
+在退出时Dump cache中所有的line的地址和内容，参考[Event-driven programming](https://www.gem5.org/documentation/learning_gem5/part2/events/)。
 
 #### Batch running
 
@@ -105,6 +115,9 @@ WIP...
 编译一个RISC-V指令集的Coremark
 
 #### 编译基于newlib的Coremark
+
+Task:
+
 使用[Boom提供Coremark编译脚本](https://github.com/riscv-boom/riscv-coremark.git)编译Coremark，你可能需要自己安装[RISC-V gnu toolchian](https://github.com/riscv-collab/riscv-gnu-toolchain)。
 
 并用GEM5运行：
