@@ -53,6 +53,34 @@ WIP...
 
 [SMT入门论文](https://pages.cs.wisc.edu/~markhill/restricted/isca96_smt.pdf)
 
+## Version control
+
+### GIT
+
+Tool Task:
+学习以下命令的使用：
+
+```
+git checkout deadbeef
+git checkout path/to/a/file
+
+git format-patch
+git apply
+git apply --check
+git am
+
+git rebase -i
+
+git rm
+git rm --cached
+```
+当你搞了一串乱七八糟的git commit history的时候，以上命令可以帮助你，并且大部分情况下，他们就够了
+
+记住：
+- 不要用`git add .`，最好用`git add -p`
+- 99%的情况，不要track log文件
+- 99%的情况，不要track binary文件
+
 ## Simulator - GEM5
 
 这里是上手用GEM5的入门训练
@@ -82,6 +110,8 @@ Tool Task:
 
 #### Add new configurable parameter 
 
+"https://www.gem5.org/documentation/learning_gem5/part2/events/"
+
 #### Event-driven programming
 
 Tool task:
@@ -91,6 +121,10 @@ Research training task:
 在退出时Dump cache中所有的line的地址和内容，按照`Least Important`的顺序导出。例如，当是`LRU`替换算法时，用`MRU`序导出。
 
 #### Batch running
+
+Tool Task:
+利用[BatchTaskTemplate](https://github.com/shinezyy/DirtyStuff.git)批量运行GEM5。
+具体地，拷贝一份`gem5tasks/restore_gcpt.py`，仔细阅读注释，修改里面的配置，把GEM5批量跑起来。
 
 #### Collecting statistics
 
@@ -135,8 +169,6 @@ Debug Training Task:
 ####
 使用[AM裸机环境](https://github.com/OpenXiangShan/nexus-am)编译裸机Coremark，参考
 [AM tutorial](https://github.com/OpenXiangShan/XiangShan-doc/blob/main/tutorial/others/%E4%BD%BF%E7%94%A8%20AM%20%E7%94%9F%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89%20workload.md)
-
-
 
 
 ### Checkpoints (Generic RISC-V Checkpoints)
