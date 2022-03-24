@@ -53,9 +53,61 @@ WIP...
 
 [SMT入门论文](https://pages.cs.wisc.edu/~markhill/restricted/isca96_smt.pdf)
 
-## Version control
+## Basics
 
-### GIT
+### Entrance-level knowledge on computer ~science~
+
+作为一个做计算机系统或者体系结构的人，有一些入门级的知识需要补充，
+最起码我们应该比百度贴吧里的中学生更了解计算机。
+
+#### Context switch
+
+记住一件事：不要在N核服务器上运行大于N个长时间任务。如果不知道为什么，建议重修操作系统。
+
+#### SMT Contention
+
+大部分AMD和Intel的服务器是启用了SMT功能的，这会导致它看上去有256核，实际上只有128个物理核。
+共享同一个物理核心的物理线程（HART）之间会相互干扰对方的性能，这个干扰可能非常大，甚至可能超过50%。
+所以，我的建议是
+
+- 当有更多服务器可以用的时候，不要把HART挤在同一个物理核上，让服务器CPU只占用50%最好
+- 当非要用SMT功能的时候
+  - 确保自己更需要吞吐率而不是time to return，尤其是跑实验的时候
+  - 确保自己做过Profiling，知道性能干扰小于50%
+
+关于SMT，应该读上面提到过的 SMT入门论文。
+如果对SMT的性能干扰感兴趣，我厚着脸皮推荐我们的论文[QoSMT](https://dl.acm.org/doi/10.1145/3330345.3330364)。
+
+#### NUMA
+
+NUMA 的问题讨论很多了，自己看看wiki吧。
+关键在于在服务器上学会使用numactl，避免把process分配在node0上，而memory在node1。
+
+#### NUCA
+
+NUCA是一个比NUMA更罕见的概念，但是我们作为研究体系结构的人，也应该搞清楚。
+为什么会有NUCA？
+[An adaptive, non-uniform cache structure for wire-delay dominated on-chip cachesNon-uniform cache structure](https://dl.acm.org/doi/abs/10.1145/605397.605420)
+
+NUCA和我有什么关系，他真的商用了吗？
+[看一看AnandTech这篇文章](https://www.anandtech.com/show/16214/amd-zen-3-ryzen-deep-dive-review-5950x-5900x-5800x-and-5700x-tested/5)
+Emmm，又是别人搞测评的都知道的东西，研究体系结构也该弄清楚吧。
+
+对于NUCA，我的建议是：
+- 如果使用AMD服务器，并且有数据交换较多的多线程任务，让他们位于同一个CCX
+- 怎么让他们位于同一个CCX呢？
+  - numactl可以控制任务所处的CPU
+  - Linux上序号相邻的4/8/16个核经常位于同一个CCX，具体看型号。你也可以直接做profiling。
+
+
+### Basic security
+
+关于密钥
+- 建议用私钥访问服务器和Git
+- 你放在服务器上的私钥是有风险的，建议把在服务器上的私钥用密码保护起来
+- 原则上，服务器都应该禁止用密码登录
+
+### Version control
 
 Tool Task:
 学习以下命令的使用：
