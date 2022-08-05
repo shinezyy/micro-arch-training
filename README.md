@@ -38,8 +38,10 @@ How to make undergraduates or new graduates ready for advanced computer architec
 
 同时我们还看到有[Onur Mutlu的高级体系结构课](https://www.bilibili.com/video/BV1Vf4y1i7YG)这样的面向研究生的体系结构课程。
 这类课程非常有深度，但是有时候和授课老师的研究方向强相关，比如Mutlu现在主要做Memory，所以这门课主要在讲Memory。
+
+## 强烈推荐 UWisc CS752！
 我们发现[UWisc的CS752](https://pages.cs.wisc.edu/~sinclair/courses/cs752/fall2020/includes/schedule.html)在各个方面较为均衡，
-因此我们会以CS752为骨架，主要使用CS752的slides，同时推荐相关论文，然后我们会设计一些课程实验帮助大家熟悉研究工具。
+因此我们推荐CS752为骨架来自学体系结构，读CS752的slides和阅读材料。
 
 ## Slides
 
