@@ -47,11 +47,28 @@ WIP...
 
 ## Papers
 
-乱序执行入门论文
+### 乱序执行
 
 [MIPS R10000](https://pages.cs.wisc.edu/~markhill/restricted/ieeemicro96_r10000.pdf)
 
-[SMT入门论文](https://pages.cs.wisc.edu/~markhill/restricted/isca96_smt.pdf)
+[SMT](https://pages.cs.wisc.edu/~markhill/restricted/isca96_smt.pdf)
+
+[Complexity-effective superscalar processors](http://www.eecs.harvard.edu/cs146-246/isca.complexity.pdf)
+
+### 性能测量与分析
+
+[SimPoint ASPLOS-2002](https://cseweb.ucsd.edu/~calder/papers/ASPLOS-02-SimPoint.pdf)
+
+[SMARTS](https://infoscience.epfl.ch/record/135578/files/isca03_smarts.pdf)
+
+[Per-Thread Cycle Accounting in SMT Processors](https://www.researchgate.net/profile/Stijn-Eyerman/publication/220938808_Per-Thread_Cycle_Accounting_in_SMT_Processors/links/53ea27980cf2fb1b9b6765dd/Per-Thread-Cycle-Accounting-in-SMT-Processors.pdf)
+
+### 分支预测
+
+[PPM for branch prediction](https://dl.acm.org/doi/pdf/10.1145/248209.237171)
+
+[TAGE](https://hal.inria.fr/hal-03408381/document)
+
 
 ## Basics
 
