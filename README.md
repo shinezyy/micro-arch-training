@@ -197,9 +197,10 @@ Tool Task:
 
 #### Add new configurable parameter 
 
-"https://www.gem5.org/documentation/learning_gem5/part2/events/"
 
 #### Event-driven programming
+
+"https://www.gem5.org/documentation/learning_gem5/part2/events/"
 
 Tool task:
 在退出时Dump cache中所有的line的地址和内容，参考[Event-driven programming](https://www.gem5.org/documentation/learning_gem5/part2/events/)。
