@@ -145,6 +145,16 @@ git rm --cached
 ```
 当你搞了一串乱七八糟的git commit history的时候，以上命令可以帮助你，并且大部分情况下，他们就够了
 
+如果要参与开源项目开发，你或许还需要掌握这些命令：
+
+```
+git merge xxx
+git rebase xxx
+git cherry-pick xxx..yyy
+git commit --fixup
+```
+可以参考(一位同学写的GIT学习笔记)[https://zhuanlan.zhihu.com/p/526826127]
+
 记住：
 - 不要用`git add .`，最好用`git add -p`
 - 99%的情况，不要track log文件
