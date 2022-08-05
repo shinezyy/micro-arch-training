@@ -168,6 +168,12 @@ Tool Task:
 
 ### Modify GEM5
 
+#### Compile a broken GEM5
+
+尝试使这个无法编译的GEM5项目通过编译：[gem5-quiz](https://github.com/OpenXiangShan/GEM5/tree/gem5-test-1)
+
+提示：其实这是一道C++题目。
+
 #### GEM5 debug flags
 
 #### GEM5 statistics
