@@ -205,7 +205,7 @@ Tool task:
 在退出时Dump cache中所有的line的地址和内容，参考[Event-driven programming](https://www.gem5.org/documentation/learning_gem5/part2/events/)。
 
 Research training task:
-在退出时Dump cache中所有的line的地址和内容，按照`Least Important`的顺序导出。例如，当是`LRU`替换算法时，用`MRU`序导出。
+在退出时Dump cache中所有的line的地址和内容，按照`Least Important`的顺序导出。例如，当是`LRU`替换算法时，用`LRU`序导出。
 
 #### Batch running
 
