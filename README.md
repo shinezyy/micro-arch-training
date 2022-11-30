@@ -99,8 +99,7 @@ WIP...
 
 #### NUMA
 
-NUMA 的问题讨论很多了，自己看看wiki吧。
-关键在于在服务器上学会使用numactl，避免把process分配在node0上，而memory在node1。
+NUMA 的问题讨论很多了，看wiki吧。
 
 #### NUCA
 
@@ -124,15 +123,18 @@ Emmm，又是别人搞测评的都知道的东西，研究体系结构也该弄�
 关于密钥
 - 建议用私钥访问服务器和Git
 - 你放在服务器上的私钥是有风险的，建议把在服务器上的私钥用密码保护起来
-- 原则上，服务器都应该禁止用密码登录
+- 原则上，所有服务器都应该禁止用密码登录
 
 ### Version control
 
-Tool Task:
-学习以下命令的使用：
+版本控制的基本要求是学习以下命令的使用：
 
 ```
-git checkout deadbeef
+git add -p
+git commit
+git commit --amend
+git checkout an-existing-branch
+git checkout -b a-new-branch
 git checkout path/to/a/file
 
 git format-patch
@@ -144,15 +146,26 @@ git rebase -i
 
 git rm
 git rm --cached
-```
-当你搞了一串乱七八糟的git commit history的时候，以上命令可以帮助你，并且大部分情况下，他们就够了
 
-如果要参与开源项目开发，你或许还需要掌握这些命令：
+git fetch
+
+git push
+
+git merge a-branch
+```
+
+如果要参与复杂的开源项目开发，你或许还需要掌握这些命令：
 
 ```
-git merge xxx
-git rebase xxx
-git cherry-pick xxx..yyy
+git reset -p
+git add -p
+git checkout -p
+
+git rebase a-branch
+git rebase a-commit
+git rebase --onto new-base-commit old-base-commit newest-modified-commit
+git cherry-pick
+
 git commit --fixup
 ```
 可以参考(一位同学写的GIT学习笔记)[https://zhuanlan.zhihu.com/p/526826127]
@@ -167,55 +180,100 @@ git commit --fixup
 这里是上手用GEM5的入门训练
 
 ### Build GEM5
-WIP...
+
+这部分请看官方文档，就不展开了。
 
 ### Configure GEM5
 
-Tool Task:
+题目：
 配置GEM5的Cache如下：
-`16 kB L1 I-Cache + 16 kB L1 D-Cache + 256kB L2 Cache + 2M L3 Cache; L2 and L3 Mostly-exclusive; Writeback clean`
-或许你不知道什么是Mostly-exclusive和Writeback clean，你需要主动去搜索学习、阅读代码。
+`16 kB L1 I-Cache + 16 kB L1 D-Cache + 256kB L2 Cache + 2M L3 Cache; L2 and L3 Mostly exclusive; L1 and L2 Writeback clean`，
+并对比Mostly-exclusive配置下，Writeback clean开与关的性能差别。
+关于workload，SPECCPU里的bzip2和bwaves都适合作为测试用例。
+或许读者不知道什么是`Mostly exclusive`和`Writeback clean`，需要主动去搜索学习或者阅读代码。
+<!-- 把[这里编译好的Coremark](#coremark)作为payload，运行GEM5，采集数据。 -->
 
-把[这里编译好的Coremark](#coremark)作为payload，运行GEM5，采集数据。
 
-### Modify GEM5
+### Compile a broken GEM5
 
-#### Compile a broken GEM5
+目的：学习C++的模板和SFINAE
 
-尝试使这个无法编译的GEM5项目通过编译：[gem5-quiz](https://github.com/OpenXiangShan/GEM5/tree/gem5-test-1)
+题目：尝试使这个无法构建的GEM5项目通过编译和链接：[gem5-quiz](https://github.com/OpenXiangShan/GEM5/tree/gem5-test-1)
+- 需要额外安装boost库，因为我们这个用到了boost
+- 构建过程最终会在链接的时候报错，需要找到出错原因并修复
 
-提示：其实这是一道C++题目。
 
-#### GEM5 debug flags
+### GEM5 statistics
 
-#### GEM5 statistics
+学习GEM5的数据统计方法。了解 Stats::Scalar, Stats::Vec, Stats::Formula, Stats::Distribution的用法，
+具体可以用grep读一读代码。 然后增加一些性能计数器，
 
-首先，需要学习GEM5的数据统计体系，了解 Stats::Scalar, Stats::Vec, Stats::Formula的用法，具体可以用grep读一读代码。
-然后增加一些性能计数器，
-- 用Stats::Vec统计每个周期发射的load指令的条数分布
-- 用Stats::Vec统计发射的Load指令和发射的Store指令的比例
+题目：
+用Stats::Vec统计每个周期发射（issue）的load指令的条数分布，例如
+```
+0条：500周期
+1条：111周期
+2条：50周期
+...
+```
+最后，再用Stats::Distribution统计每个周期发射（issue）的load指令的条数分布。
 
-#### Add new configurable parameter 
+### Event-driven programming
 
-[学习GEM5如何增加参数](https://www.gem5.org/documentation/learning_gem5/part2/parameters/)
+子题目1: 在GEM5退出时，Dump cache中所有的line的地址和内容，
+参考[Event-driven programming](https://www.gem5.org/documentation/learning_gem5/part2/events/)，
+但是退出的event callback和这里展示的例子不完全一样，需要自己去阅读相关代码。
 
-#### Event-driven programming
+子题目2：在退出时Dump cache中所有的line的地址和内容，按照Least Important的顺序导出。例如，当使用LRU替换算法时，用LRU序导出；
+当使用RRIP算法是，先导出RRI较大的，再导出RRI较小的。
+希望可以找到一种不需要触及替换算法本身的dump方法。
 
-Tool task:
-在退出时Dump cache中所有的line的地址和内容，参考[Event-driven programming](https://www.gem5.org/documentation/learning_gem5/part2/events/)。
+### Add new configurable parameter 
 
-Research training task:
-在退出时Dump cache中所有的line的地址和内容，按照`Least Important`的顺序导出。例如，当是`LRU`替换算法时，用`MRU`序导出。
+参考资料：[学习GEM5如何增加参数](https://www.gem5.org/documentation/learning_gem5/part2/parameters/)
 
-#### Batch running
+题目：给se.py或者fs.py 增加一个参数--dump-cache，当带上这个参数的时候，退出时按照Event-driven programming中的要求dump cache；否则不进行dump。
+
+### GEM5 debug flags
+
+目的：学习GEM5的printf调试系统，以及加强对参数系统的理解。
+
+参考资料：[Debugging gem5](https://www.gem5.org/documentation/learning_gem5/part2/debugging/)
+
+题目1：给GEM5增加一个debug flag：`CacheMiss`，当发生cache miss的时候，打印出cache miss的地址。
+
+题目2：给GEM5增加一个参数：`--observe-cache-miss`，他的可选值为：['L1d', 'L1i', 'L2', 'L3']，
+当带上这个参数的时候且开启了`CacheMiss` debug flag ，在发生cache miss时打印出`--observe-cache-miss`所指定的那一块cache发生miss的地址。
+（注意，题目1是打印所有，题目2是只打印选定的cache）
+针对题目2，至少需要阅读：`src/mem/cache/Cache.py`，`configs/common/Caches.py`。
+
+### Out-of-order core
+
+这部分的目的是，学习GEM5如何实现乱序执行。
+
+题目1：
+统计指令之间的寄存器依赖：统计有依赖的两条指令之间的“距离”分布，“距离”是指两条指令的seqNum之差。
+其中，“有依赖”是指两条指令之间有寄存器依赖，“依赖距离”是指两个有依赖的指令的seqNum。
+这些指令不一定是最终提交的指令，在分支预测错误的路径上也没关系。
+将分布统计为如下形式：
+```
+distance < 10: xxx
+10 <= distance < 20: xxx
+20 <= distance < 40: xxx
+40 <= distance < 80: xxx
+distance > 80: xxx
+```
+提示：阅读O3 CPU的`InstQueue`和`dependGraph`这两个类，并修改其中的数据结构和函数进行统计。
+
+### Batch running
 
 Tool Task:
 利用[BatchTaskTemplate](https://github.com/shinezyy/DirtyStuff.git)批量运行GEM5。
 具体地，拷贝一份`gem5tasks/restore_gcpt.py`，仔细阅读注释，修改里面的配置，把GEM5批量跑起来。
 
-#### Collecting statistics
+### Collecting statistics
 
-#### Collecting batch-running statistics
+### Collecting batch-running statistics
 
 WIP...
 
