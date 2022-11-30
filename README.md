@@ -225,7 +225,7 @@ git commit --fixup
 但是退出的event callback和这里展示的例子不完全一样，需要自己去阅读相关代码。
 
 子题目2：在退出时Dump cache中所有的line的地址和内容，按照Least Important的顺序导出。例如，当使用LRU替换算法时，用LRU序导出；
-当使用RRIP算法是，先导出RRI较大的，再导出RRI较小的。
+当使用RRIP算法是，先导出RRI较大的，后导出RRI较小的。
 希望可以找到一种不需要触及替换算法本身的dump方法。
 
 ### Add new configurable parameter 
