@@ -216,12 +216,8 @@ WIP...
 
 [The Soul of A New Machine](https://www.amazon.com/Soul-New-Machine-Tracy-Kidder/dp/0316491977)
 
- ### Patents
+### Patents
 [ U.S. Patent 5,781,752](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=5781752.PN.&OS=PN/5781752&RS=PN/5781752)
-
-
-
-
 
 ## Basics
 
