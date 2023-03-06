@@ -71,6 +71,22 @@ WIP...
 
 [TAGE](https://hal.inria.fr/hal-03408381/document)
 
+### Books
+
+[Computer Structures: Principles and Examples](http://catalog.lib.utexas.edu/record=b2058103)
+
+[Architecture of Pipelined Computers](http://www.amazon.com/Architecture-Pipelined-Computers-Peter-Kogge/dp/0070352372)
+
+[The Pentium Chronicles: The People, Passion, and Politics Behind Intel's Landmark Chips](https://www.amazon.com/Pentium-Chronicles-Passion-Politics-Landmark/dp/0471736171)
+
+[The Soul of A New Machine](https://www.amazon.com/Soul-New-Machine-Tracy-Kidder/dp/0316491977)
+
+ ### Patents
+[ U.S. Patent 5,781,752](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=5781752.PN.&OS=PN/5781752&RS=PN/5781752)
+
+
+
+
 
 ## Basics
 
