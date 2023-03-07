@@ -49,27 +49,23 @@ WIP...
 
 ## Papers
 
-### 乱序执行
+### Processor Micorarchitectures
 
-[MIPS R10000](https://pages.cs.wisc.edu/~markhill/restricted/ieeemicro96_r10000.pdf)
+[ Introduction to the Cell multiprocessor](http://www.cs.utexas.edu/users/pingali/CS378/2008sp/papers/kahle.pdf)
 
-[SMT](https://pages.cs.wisc.edu/~markhill/restricted/isca96_smt.pdf)
+[Design of Transport Triggered Architectures](https://login.ezproxy.lib.utexas.edu/login?qurl=http%3a%2f%2fieeexplore.ieee.org%2fxpls%2fabs_all.jsp%3farnumber%3d289981)
 
-[Complexity-effective superscalar processors](http://www.eecs.harvard.edu/cs146-246/isca.complexity.pdf)
+[PIPE: A VLSI Decoupled Architecture](http://ezproxy.lib.utexas.edu/login?url=http://dl.acm.org/citation.cfm?id=327117)
 
-### 性能测量与分析
+[Multiscalar Processors](ftp://ftp.cs.wisc.edu/sohi/papers/1995/isca.multiscalar.pdf)(链接失效)
 
-[SimPoint ASPLOS-2002](https://cseweb.ucsd.edu/~calder/papers/ASPLOS-02-SimPoint.pdf)
+[Implementing Precise Interrupts in Pipelined Processors](http://www.ecs.umass.edu/ece/koren/ece568/papers/smith.pdf)
 
-[SMARTS](https://infoscience.epfl.ch/record/135578/files/isca03_smarts.pdf)
+[The CRAY-1 computer system](https://dl.acm.org/citation.cfm?id=359336)
 
-[Per-Thread Cycle Accounting in SMT Processors](https://www.researchgate.net/profile/Stijn-Eyerman/publication/220938808_Per-Thread_Cycle_Accounting_in_SMT_Processors/links/53ea27980cf2fb1b9b6765dd/Per-Thread-Cycle-Accounting-in-SMT-Processors.pdf)
+[Rigel: an architecture and scalable programming interface for a 1000-core accelerator](https://dl.acm.org/citation.cfm?id=1555774)
 
-### 分支预测
 
-[PPM for branch prediction](https://dl.acm.org/doi/pdf/10.1145/248209.237171)
-
-[TAGE](https://hal.inria.fr/hal-03408381/document)
 
 ### Out-of-Order and Superscalar
 
