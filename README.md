@@ -89,7 +89,7 @@ WIP...
 
 [Complexity-Effective Superscalar Processors](http://ftp.cs.wisc.edu/sohi/papers/1997/isca.complexity.pdf)
 
-[On Pipelining Dynamic Instruction Scheduling Logic](http://users.ece.utexas.edu/~patt/22s.382N/handouts/On pipelining dynamic instruction scheduling logic)
+[On Pipelining Dynamic Instruction Scheduling Logic](https://users.ece.utexas.edu/~patt/22s.382N/handouts/On%20pipelining%20dynamic%20instruction%20scheduling%20logic)
 
 [ Limits on multiple instruction issue](http://dl.acm.org/citation.cfm?id=68209)
 
@@ -113,7 +113,7 @@ WIP...
 
 ### Future Trends
 
-[Dark Silicon and the End of Multicore Scaling](ftp://ftp.cs.utexas.edu/pub/dburger/papers/ISCA11.pdf)
+[Dark Silicon and the End of Multicore Scaling](ftp://ftp.cs.utexas.edu/pub/dburger/papers/ISCA11.pdf)(链接失效)
 
 [Soft Errors in Advanced Computer Systems](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1438282)
 
