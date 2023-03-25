@@ -414,18 +414,18 @@ git commit --fixup
 
 ### GEM5 statistics
 
-学习GEM5的数据统计方法。了解 Stats::Scalar, Stats::Vec, Stats::Formula, Stats::Distribution的用法，
+学习GEM5的数据统计方法。了解 statistics::Scalar, statistics::Vector, statistics::Formula, statistics::Distribution的用法，
 具体可以用grep读一读代码。 然后增加一些性能计数器，
 
 题目：
-用Stats::Vec统计每个周期发射（issue）的load指令的条数分布，例如
+用statistics::Vector统计每个周期发射（issue）的load指令的条数分布，例如
 ```
 0条：500周期
 1条：111周期
 2条：50周期
 ...
 ```
-最后，再用Stats::Distribution统计每个周期发射（issue）的load指令的条数分布。
+最后，再用statistics::Distribution统计每个周期发射（issue）的load指令的条数分布。
 
 ### Event-driven programming
 
