@@ -49,237 +49,91 @@ WIP...
 
 ## Papers
 
+++ 标注的是初学者应该先学习的论文
+
 ### 乱序执行
 
-[MIPS R10000](https://pages.cs.wisc.edu/~markhill/restricted/ieeemicro96_r10000.pdf)
-
-[SMT](https://pages.cs.wisc.edu/~markhill/restricted/isca96_smt.pdf)
-
-[Complexity-effective superscalar processors](http://www.eecs.harvard.edu/cs146-246/isca.complexity.pdf)
-
-### 性能测量与分析
-
-[SimPoint ASPLOS-2002](https://cseweb.ucsd.edu/~calder/papers/ASPLOS-02-SimPoint.pdf)
-
-[SMARTS](https://infoscience.epfl.ch/record/135578/files/isca03_smarts.pdf)
-
-[Per-Thread Cycle Accounting in SMT Processors](https://www.researchgate.net/profile/Stijn-Eyerman/publication/220938808_Per-Thread_Cycle_Accounting_in_SMT_Processors/links/53ea27980cf2fb1b9b6765dd/Per-Thread-Cycle-Accounting-in-SMT-Processors.pdf)
-
-### 分支预测
-
-[PPM for branch prediction](https://dl.acm.org/doi/pdf/10.1145/248209.237171)
-
-[TAGE](https://hal.inria.fr/hal-03408381/document)
-
-
-### Processor Micorarchitectures
-
-[ Introduction to the Cell multiprocessor](http://www.cs.utexas.edu/users/pingali/CS378/2008sp/papers/kahle.pdf)
-
-[Design of Transport Triggered Architectures](https://login.ezproxy.lib.utexas.edu/login?qurl=http%3a%2f%2fieeexplore.ieee.org%2fxpls%2fabs_all.jsp%3farnumber%3d289981)
-
-[PIPE: A VLSI Decoupled Architecture](http://ezproxy.lib.utexas.edu/login?url=http://dl.acm.org/citation.cfm?id=327117)
-
-[Multiscalar Processors](ftp://ftp.cs.wisc.edu/sohi/papers/1995/isca.multiscalar.pdf)(链接失效)
-
-[Implementing Precise Interrupts in Pipelined Processors](http://www.ecs.umass.edu/ece/koren/ece568/papers/smith.pdf)
-
-[The CRAY-1 computer system](https://dl.acm.org/citation.cfm?id=359336)
-
-[Rigel: an architecture and scalable programming interface for a 1000-core accelerator](https://dl.acm.org/citation.cfm?id=1555774)
-
-
-
-### Out-of-Order and Superscalar
+++ [MIPS R10000](https://pages.cs.wisc.edu/~markhill/restricted/ieeemicro96_r10000.pdf)
 
 [An Efficient Algorithm for Exploiting Multiple Arithmetic Units](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5392028)
 
-[Dataflow machine architecture](https://dl.acm.org/citation.cfm?id=28055)
+[HPS, a new microarchitecture: rationale and introduction](http://ezproxy.lib.utexas.edu/login?url=http://doi.acm.org/10.1145/18927.18916)
 
-[ The Manchester Prototype Dataflow Computer](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.587.5154&rep=rep1&type=pdf)
+[Critical issues regarding HPS, a high performance microarchitecture](http://ezproxy.lib.utexas.edu/login?url=http://doi.acm.org/10.1145/18927.18917)
 
-[ Design of transport triggered architectures](http://ieeexplore.ieee.org/document/289981/)
+++ [Complexity-Effective Superscalar Processors](http://ftp.cs.wisc.edu/sohi/papers/1997/isca.complexity.pdf)
 
-[ HPS, a new microarchitecture: rationale and introduction](http://ezproxy.lib.utexas.edu/login?url=http://doi.acm.org/10.1145/18927.18916)
 
-[ Critical issues regarding HPS, a high performance microarchitecture](http://ezproxy.lib.utexas.edu/login?url=http://doi.acm.org/10.1145/18927.18917)
+### 数据流架构
 
-[Decoupled Access/Execute Computer](http://ezproxy.lib.utexas.edu/login?url=http://portal.acm.org/citation.cfm?doid=357401.357403)
-
-[Complexity-Effective Superscalar Processors](http://ftp.cs.wisc.edu/sohi/papers/1997/isca.complexity.pdf)
-
-[On Pipelining Dynamic Instruction Scheduling Logic](https://users.ece.utexas.edu/~patt/22s.382N/handouts/On%20pipelining%20dynamic%20instruction%20scheduling%20logic)
-
-[ Limits on multiple instruction issue](http://dl.acm.org/citation.cfm?id=68209)
-
-[Spills fills and kills. An Architecture for Reducing Register-Memory Traffic.](http://cva.stanford.edu/publications/2000/sfka_TR23.pdf)
-
-[A preliminary architecture for a basic data-flow processor](https://dl.acm.org/citation.cfm?id=642111)
+[The Manchester Prototype Dataflow Computer](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.587.5154&rep=rep1&type=pdf)
 
 [Executing a program on the MIT tagged-token dataflow architecture](https://ieeexplore.ieee.org/document/48862/)
 
-### Simultaneous Multithreading
+[Scaling to the End of Silicon with EDGE Architectures](http://www.cs.utexas.edu/users/cart/trips/publications/computer04.pdf)
 
-[Architecture and applications of the HEP multiprocessor computer system ](https://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1231963)
 
-[DISC: Dynamic Instruction Stream Computer](http://ezproxy.lib.utexas.edu/login?url=http://portal.acm.org/citation.cfm?doid=123465.123498)
+### 性能测量与分析
 
-[ DISC: dynamic instruction stream computer-an evaluation of performance](http://ezproxy.lib.utexas.edu/login?url=http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=270620&isnumber=6718)
+++ [SimPoint ASPLOS-2002](https://cseweb.ucsd.edu/~calder/papers/ASPLOS-02-SimPoint.pdf)
 
-[ An Elementary Processor Architecture with Simultaneous Instruction Issuing from Multiple Threads](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=753311&isnumber=16270)
+[SMARTS](https://infoscience.epfl.ch/record/135578/files/isca03_smarts.pdf)
 
-[Simultaneous Multithreading: Maximizing On-Chip Parallelism](http://ezproxy.lib.utexas.edu/login?url=http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=524578)
+++ [A performance counter architecture for computing accurate CPI components](https://dl.acm.org/doi/abs/10.1145/1168918.1168880)
 
-### Future Trends
+[A top-down method for performance analysis and counters architecture](https://ieeexplore.ieee.org/abstract/document/6844459/)
 
-[Dark Silicon and the End of Multicore Scaling](ftp://ftp.cs.utexas.edu/pub/dburger/papers/ISCA11.pdf)(链接失效)
 
-[Soft Errors in Advanced Computer Systems](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1438282)
+### 流水线前端设计
 
-[Requirements, Bottlenecks, and Good Fortune: Agents for Microprocessor Evolution](http://ieeexplore.ieee.org/ielx5/5/20821/00964437.pdf?tp=&arnumber=964437&isnumber=20821)
+[A Scalable Front-End Architecture for Fast Instruction Delivery](https://dl.acm.org/doi/pdf/10.1145/307338.300999)
 
-[There’s plenty of room at the Top: What will drive computer performance after Moore’s law?](https://www.science.org/doi/10.1126/science.aam9744)
+[Fetch directed instruction prefetching](https://ieeexplore.ieee.org/abstract/document/809439)
 
-### Superblocks and Hyperblocks
+[Re-establishing Fetch-Directed Instruction Prefetching: An Industry Perspective](https://ieeexplore.ieee.org/abstract/document/9408197)
 
-[Effective compiler support for predicated execution using the hyperblock](http://ezproxy.lib.utexas.edu/login?url=http://doi.acm.org/10.1145/144953.144998)
 
-[IMPACT: an architectural framework for multiple-instruction-issue processors](http://ezproxy.lib.utexas.edu/login?url=http://doi.acm.org/10.1145/115953.115979)
-
-[Achieving Out-of-Order Performance with Almost In-Order Complexity ](https://ieeexplore.ieee.org/document/4556711/)
-
-### Trace Cache
-
-[Performance benefits of large execution atomic units in dynamically scheduled machines](http://ezproxy.lib.utexas.edu/login?url=http://doi.acm.org/10.1145/318789.318890)
-
-[Dynamic flow instruction cache memory organized around trace segments independent of virtual address line](http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=5381533)
-
-[Alternative Fetch and Issue Policies for the Trace Cache Fetch Mechanism](http://dl.acm.org/citation.cfm?id=266803)
-
-[Improving trace cache effectiveness with branch promotion and trace packing](http://ezproxy.lib.utexas.edu/login?url=http://doi.acm.org/10.1145/279358.279394)
-
-[Trace Cache: a Low Latency Approach to High Bandwidth Instruction Fetching](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=566447)
-
-[Trace processors](http://ezproxy.lib.utexas.edu/login?url=http://portal.acm.org/citation.cfm?id=266800.266814)
-
-[The block-based trace cache](http://ezproxy.lib.utexas.edu/login?url=http://doi.acm.org/10.1145/300979.300996)
-
-[Putting the fill unit to work](http://dl.acm.org/citation.cfm?id=290977)
-
-### Cache Management Techniques
-
-[On the inclusion properties for multi-level cache hierarchies ](https://dl.acm.org/citation.cfm?id=285994)
-
-[The V-Way Cache : Demand-Based Associativity via Global Replacement](https://dl.acm.org/citation.cfm?id=1070015)
-
-[A Case for MLP-Aware Cache Replacement](https://dl.acm.org/citation.cfm?id=1136501)
-
-[Adaptive Insertion Policies for High Performance Caching](https://dl.acm.org/citation.cfm?id=1250709)
-
-[Base-Delta-Immediate Compression: Practical Data Compression for On-Chip Caches](https://users.ece.cmu.edu/~omutlu/pub/bdi-compression_pact12.pdf)
-
-[Improving direct-mapped cache performance by the addition of a small fully-associative cache and prefetch buffers ](https://dl.acm.org/doi/abs/10.1145/325096.325162)
-
-[ Line Distillation: Increasing Cache Capacity by Filtering Unused Words in Cache Lines.](https://dl.acm.org/doi/10.1109/HPCA.2007.346202)
-
-[Exploiting Compressed Block Size as an Indicator of Future Reuse.](http://www.cs.toronto.edu/~pekhimenko/Papers/camp-hpca21.pdf)
-
-### Data prefetching
-
-[Techniques for Bandwidth-Efficient Prefetching of Linked Data Structures in Hybrid Prefetching Systems ](http://ieeexplore.ieee.org/document/4798232/)
-
-[Coordinated control of multiple prefetchers in multi-core systems ](https://dl.acm.org/citation.cfm?id=1669154)
-
-### Runahead Execution
-
-[Improving data cache performance by pre-executing instructions under a cache miss](http://ezproxy.lib.utexas.edu/login?url=http://portal.acm.org/citation.cfm?doid=263580.263597)
-
-[Runahead Execution: An Alternative to Very Large Instruction Windows for Out-of-order Processors](https://dl.acm.org/citation.cfm?id=822823)
-
-[Techniques for Efficient Processing in Runahead Execution Engines](https://dl.acm.org/citation.cfm?id=1070000)
-
-### Branch Prediction
+### 分支预测
 
 [A Study of Branch Prediction Strategies](http://portal.acm.org/citation.cfm?id=801871)
 
 [Two-Level Adaptive Training Branch Prediction](https://dl.acm.org/citation.cfm?id=123475)
 
-[Alternative implementations of two-level adaptive branch prediction](http://portal.acm.org/citation.cfm?id=139709)
-
-[Improving the accuracy of dynamic branch prediction using branch correlation](http://ezproxy.lib.utexas.edu/login?url=http://portal.acm.org/citation.cfm?doid=143365.143490)
-
-[Combining Branch Predictors](http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-TN-36.pdf)
-
-[Dynamic path-based branch correlation](http://portal.acm.org/citation.cfm?id=225168)
-
 [The Agree Predictor: A Mechanism For Reducing Negative Branch History Interference](http://ezproxy.lib.utexas.edu/login?url=http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=604711)
 
 [Dynamic Branch Prediction with Perceptrons.](http://www.cs.utexas.edu/~lin/papers/hpca01.pdf)
 
+++ [Analysis of branch prediction via data compression](https://dl.acm.org/citation.cfm?id=237171)
+
 [Analysis of the OGEHL predictor](http://www.irisa.fr/caps/people/seznec/ISCA05.pdf)
 
-[Wrong Path Events: Exploiting Unusual and Illegal Program Behavior for Early Misprediction Detection and Recovery](http://hps.ece.utexas.edu/pub/armstrong_micro04.pdf)
+[TAGE](https://hal.inria.fr/hal-03408381/document)
 
-[Analysis of branch prediction via data compression](https://dl.acm.org/citation.cfm?id=237171)
 
-[An analysis of correlation and predictability: what makes two-level branch predictors work](https://dl.acm.org/citation.cfm?id=279368)
+### 数据预取
 
-### Predication
+[Effective hardware-based data prefetching for high-performance processors](https://ieeexplore.ieee.org/abstract/document/381947)
 
-[Conversion of control dependence to data dependence](http://portal.acm.org/citation.cfm?id=567067.567085)
+++ [SMS](https://dl.acm.org/doi/abs/10.1145/1150019.1136508)
 
-[ Wish Branches: Combining Conditional Branching and Predication for Adaptive Predicated Execution](https://dl.acm.org/citation.cfm?id=1100564)
+[Best-offset hardware prefetching](https://ieeexplore.ieee.org/abstract/document/7446087)
 
-### Block-Structured ISA
+[Temporal prefetching without the off-chip metadata](https://dl.acm.org/doi/abs/10.1145/3352460.3358300)
 
-[Exploiting Fine-grained Parallelism Through a Combination of Hardware and Software Techniques](http://www.zytek.com/~melvin/p287-melvin.pdf)
 
-[Facilitating superscalar processing via a combined static/dynamic register renaming scheme](http://ezproxy.lib.utexas.edu/login?url=http://doi.acm.org/10.1145/192724.197407)
 
-[Increasing the Instruction Fetch Rate via Block-Structured Instruction Set Architectures](http://ezproxy.lib.utexas.edu/login?url=http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=566461)
+### 缓存替换
 
-[Scaling to the End of Silicon with EDGE Architectures](http://www.cs.utexas.edu/users/cart/trips/publications/computer04.pdf)
+[A Case for MLP-Aware Cache Replacement](https://dl.acm.org/citation.cfm?id=1136501)
 
-### Measurements
+++ [High performance cache replacement using re-reference interval prediction (RRIP)](https://dl.acm.org/doi/abs/10.1145/1816038.1815971)
 
-[SPAM: A Microcode Based Tool for Tracing Operating System Events ](https://hps.ece.utexas.edu/pub/melvin_micro20.pdf)
+[SHiP: signature-based hit predictor for high performance caching](https://dl.acm.org/doi/abs/10.1145/2155620.2155671)
+
 
 ### Consistency Models
 
 [How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs](http://research.microsoft.com/users/lamport/pubs/multi.pdf)
-
-### Tagless Caches
-
-[TLC: A tag-less cache for reducing dynamic first level cache energy](https://dl.acm.org/citation.cfm?doid=2540708.2540714)
-
-[Data placement across the cache hierarchy: Minimizing data movement with reuse-aware placement](http://dx.doi.org/10.1109/ICCD.2016.7753269)
-
-[A split cache hierarchy for enabling data-oriented optimizations.](http://dx.doi.org/10.1109/HPCA.2017.25)
-
-### RISC
-
-[The case for the reduced instruction set computer](https://dl.acm.org/citation.cfm?id=641917)
-
-### Other Topics
-
-[The residue number system](https://dl.acm.org/citation.cfm?id=1457864)
-
-[A SIGNED BINARY MULTIPLICATION TECHNIQUE](https://academic.oup.com/qjmam/article/4/2/236/1874893)
-
-[A hardware implementation of capability-based addressing](https://dl.acm.org/citation.cfm?doid=850708.850709)
-
-### Books
-
-[Computer Structures: Principles and Examples](http://catalog.lib.utexas.edu/record=b2058103)
-
-[Architecture of Pipelined Computers](http://www.amazon.com/Architecture-Pipelined-Computers-Peter-Kogge/dp/0070352372)
-
-[The Pentium Chronicles: The People, Passion, and Politics Behind Intel's Landmark Chips](https://www.amazon.com/Pentium-Chronicles-Passion-Politics-Landmark/dp/0471736171)
-
-[The Soul of A New Machine](https://www.amazon.com/Soul-New-Machine-Tracy-Kidder/dp/0316491977)
-
-### Patents
-[ U.S. Patent 5,781,752](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=5781752.PN.&OS=PN/5781752&RS=PN/5781752)
 
 ## Basics
 
@@ -377,7 +231,7 @@ git cherry-pick
 
 git commit --fixup
 ```
-可以参考(一位同学写的GIT学习笔记)[https://zhuanlan.zhihu.com/p/526826127]
+可以参考[一位同学写的GIT学习笔记](https://zhuanlan.zhihu.com/p/526826127)
 
 记住：
 - 不要用`git add .`，最好用`git add -p`
