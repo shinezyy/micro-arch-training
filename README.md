@@ -32,16 +32,18 @@ How to make undergraduates or new graduates ready for advanced computer architec
 现在我们回到正题——计算机体系结构。根据我们的了解，目前很多（高级）体系结构课都不够深入，无法保证学生在完成课程之后就能进行相关研究。
 本项目希望弥补这一空缺，培养面向体系结构研究或者高性能处理器开发的能力，包括理论知识和实践能力。
 
-首先，我们继续推荐公开课：[Onur Mutlu的体系结构课](https://www.bilibili.com/video/BV1PT4y1M7gM?p=1)
-或者[David Wentzlaff的体系结构课](https://www.bilibili.com/video/av93575643)。
-这类课程都适合本科生入门看，但是距离做研究还有一段距离。
+理论知识部分，可以学习视频公开课，例如[Onur Mutlu的体系结构课](https://www.bilibili.com/video/BV1PT4y1M7gM?p=1)
+或[David Wentzlaff的体系结构课](https://www.bilibili.com/video/av93575643)。
+也可以参考公开的课程slides，例如[UWisc的ECE752](https://ece752.ece.wisc.edu/)或者
+[UWisc的CS752](https://pages.cs.wisc.edu/~sinclair/courses/cs752/fall2020/includes/schedule.html)。
+我个人比较喜欢[UWisc的ECE752](https://ece752.ece.wisc.edu/)，
+因为 ECE752 在讲分支预测、寄存器数据流和访存数据流的时候，提供了非常多的参考文献，
+可以说 Lecture 7-9 是 CPU 架构设计中经典算法的综述。
 
 同时我们还看到有[Onur Mutlu的高级体系结构课](https://www.bilibili.com/video/BV1Vf4y1i7YG)这样的面向研究生的体系结构课程。
-这类课程非常有深度，但是有时候和授课老师的研究方向强相关，比如Mutlu现在主要做Memory，所以这门课主要在讲Memory。
+这类课程非常有深度，但是有时候和授课老师的研究方向强相关，比如Mutlu现在主要做Memory，所以这门课主要在讲Memory；
+而ECE752的后续课程[ECE757](https://ece757.ece.wisc.edu/)主要讲多核架构和并行编程。
 
-## 强烈推荐 UWisc CS752！
-我们发现[UWisc的CS752](https://pages.cs.wisc.edu/~sinclair/courses/cs752/fall2020/includes/schedule.html)在各个方面较为均衡，
-因此我们推荐CS752为骨架来自学体系结构，读CS752的slides和阅读材料。
 
 ## Slides
 
