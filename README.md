@@ -44,6 +44,12 @@ How to make undergraduates or new graduates ready for advanced computer architec
 这类课程非常有深度，但是有时候和授课老师的研究方向强相关，比如Mutlu现在主要做Memory，所以这门课主要在讲Memory；
 而ECE752的后续课程[ECE757](https://ece757.ece.wisc.edu/)主要讲多核架构和并行编程。
 
+## Ads
+
+我在2021年第一次写了这个小指南，可惜一直没有彻底完善。
+
+现在我在招人，我发现时至今日（2023年），仍然很难招到扎实学习了上述4门课程的人（即完成理论课+课程实验）。
+如果你在求职，并且扎实学习过其中2-3门，欢迎给我发简历：archshinez at outlook dot com
 
 ## Slides
 
