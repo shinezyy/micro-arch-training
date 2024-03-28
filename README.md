@@ -25,6 +25,16 @@ How to make undergraduates or new graduates ready for advanced computer architec
 我们也推荐做[CS 143的实验课Cool Compiler](https://github.com/search?q=cool+compiler+lab)，因为实验材料需要从内网下载，所以我们只好在Github搜一个来做。
 这个实验让写一个语法较为Fancy的编译器，然后生成汇编代码，可选做一些优化。
 
+#### 实验素材
+
+- [cpu0](https://jonathan2251.github.io/lbd/llvmstructure.html)
+
+  推荐理由
+
+  - 相比于其他compiler公开课的project，该项目只需实现后端，更“实用“（尽可能只关注优化 pass）
+  - 基于riscv（不过emulator/os/compiler几乎都从X86迁移到riscv了）
+  - 基于llvm实现，更现代一点
+
 最后，因为如果有高质量的中文公开课或者更好的实验素材，欢迎大家可以发PR给我们推荐一下。我们希望以上的每门课都有一门高质量的中文公开课+一门高质量的英文公开课+高质量的实验课。
 
 # Computer Architecture
