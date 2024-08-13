@@ -11,7 +11,7 @@ How to make undergraduates or new graduates ready for advanced computer architec
 
 ## Introduction to Computer System
 
-这部分的课程学习建议读CSAPP那本书，实验推荐做[NEMU Programming Assignment](https://nju-projectn.github.io/ics-pa-gitbook/ics2022/)。
+这部分的课程学习建议读CSAPP那本书，实验推荐做[NEMU Programming Assignment](https://nju-projectn.github.io/ics-pa-gitbook/ics2024/)。
 这个实验让写一个可以启动简单操作系统、运行仙剑奇侠传的模拟器。
 
 ## Operating System
